@@ -29,7 +29,14 @@ public class Selection {
     //                        timerCinema.setDelay(sc.nextInt());
                         mainMenu.menu();
                     case 2:
-                        System.out.println(selectionDto.getReservedSeats().toString());
+                        if(selectionDto.getReservedSeats().isEmpty()){
+                            System.out.println("No Reservations made yet. ");
+                            mainMenu.menu();
+                        }else {
+                            System.out.println(selectionDto.getReservedSeats().toString());
+                            mainMenu.menu();
+                        }
+
 
                 }
 

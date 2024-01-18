@@ -13,7 +13,7 @@ public class Admin implements StandardMenu{
 
         System.out.println("Select action");
         Map<Integer, String> actionAdmin = new HashMap<>();
-        actionAdmin.put(1, UsersActions.SETUP.toString());
+        actionAdmin.put(1, UsersActions.SETUP.toString() + "(Not Yet Working)");
         actionAdmin.put(2, UsersActions.VIEW.toString());
         actionAdmin.forEach((key, value) -> System.out.println(key + ":" + value));
         return myObj.nextInt();
